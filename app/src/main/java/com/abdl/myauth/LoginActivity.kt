@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
 import com.abdl.myauth.databinding.ActivityLoginBinding
+import com.google.android.material.snackbar.Snackbar
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
@@ -22,6 +23,15 @@ class LoginActivity : AppCompatActivity() {
         binding.register.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
+        }
+
+        binding.lupaPassword.setOnClickListener {
+            Snackbar.make(binding.container, "Silahkan menghubungi admin!", Snackbar.LENGTH_LONG)
+                .also { snackbar ->
+                    snackbar.setAction("Ok") {
+                        snackbar.dismiss()
+                    }
+                }.show()
         }
 
     }

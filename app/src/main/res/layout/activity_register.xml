@@ -56,7 +56,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#00FFFFFF"
-                android:hint="First Name"
+                android:hint="Nama Depan"
                 android:maxLines="1"/>
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -80,7 +80,7 @@
                 android:id="@+id/edt_last_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Last Name"
+                android:hint="Nama Belakang"
                 android:backgroundTint="#00FFFFFF"
                 android:maxLines="1"
                 />
@@ -157,7 +157,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#00FFFFFF"
-                android:hint="Confirm Password"
+                android:hint="Ulangi Password"
                 android:inputType="textPassword" />
 
             </com.google.android.material.textfield.TextInputLayout>
